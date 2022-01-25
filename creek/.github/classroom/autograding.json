@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "Test",
+      "setup": "conda install python=3.6 --yes; conda install -c potassco clingo --yes",
+      "run": "/usr/share/miniconda/bin/python3.6 asp/test.py -e asp/creek.lp -t 180 -c /usr/share/miniconda/bin/clingo",
+      "input": "",
+      "output": "SUCCESS",
+      "comparison": "included",
+      "timeout": 60,
+      "points": null
+    }
+  ]
+}
